@@ -1,9 +1,6 @@
 package com.example.demo.security;
-
-import com.example.demo.service.PatientService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -17,11 +14,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-    private PatientService patientService;
-
-    public SecurityConfig(PatientService patientService) {
-        this.patientService = patientService;
-    }
 
     @Bean
     public static PasswordEncoder passwordEncoder() {
