@@ -25,15 +25,6 @@ public class SecurityConfig {
         return configuration.getAuthenticationManager();
     }
 
-//    @Bean
-//    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//        http.csrf(Customizer.withDefaults()).disable().authorizeHttpRequests((authorize) ->
-//                authorize.requestMatchers(HttpMethod.GET, "/api/**").permitAll()
-//                        .requestMatchers("/api/auth/**").permitAll()
-//                        .anyRequest().authenticated());
-//        return http.build();
-//    }
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests((requests) ->
