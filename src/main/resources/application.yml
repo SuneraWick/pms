@@ -1,0 +1,15 @@
+#spring:
+#  datasource:
+#    username: root
+#    password: g9647@GSS
+#    url: jdbc:mysql://localhost:3306/pms
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect:MySQL8Dialect
+server:
+  port: 9191
